@@ -1,12 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 
 
 export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-    <Link className="navbar-brand" to="/">{props.title}</Link>
+    <p className="navbar-brand" >{props.title}</p>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -14,10 +12,10 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
         <li className="nav-item active">
-          <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+          <p className="nav-link" >Home <span className="sr-only">(current)</span></p>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/about">{props.aboutText}</Link>
+          <p className="nav-link" >{props.aboutText}</p>
         </li>
       </ul>
       <form className="form-inline my-2 mx-4">
@@ -33,12 +31,4 @@ export default function Navbar(props) {
   )
 }
 
-Navbar.propTypes = {
-  title: PropTypes.string.isRequired,
-  aboutText: PropTypes.string.isRequired
-}
 
-Navbar.defaultProps = {
-  title: 'Set title here',
-  aboutText: 'About'
-}
