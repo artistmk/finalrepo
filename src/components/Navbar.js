@@ -16,7 +16,7 @@ export default function Navbar(props) {
           <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/about">{props.aboutText}</Link>
+          <Link className="nav-link" to="/about">About</Link>
         </li>
       </ul>
       <form className="form-inline my-2 mx-4">
@@ -32,4 +32,4 @@ export default function Navbar(props) {
   )
 }
 
-props.type
+
