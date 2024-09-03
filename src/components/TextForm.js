@@ -43,11 +43,11 @@ const [text, setText] = useState("");
              <div className="form-group">
     <textarea className="form-control" value = {text} onChange= {handleOnChange} style={{backgroundColor: props.mode === "dark" ? "grey" : "white", color: props.mode === "dark" ? "white" : "#042743"}} id="myBox" rows="8"></textarea>
   </div>
-  <button className="btn btn-primary mx-2" onClick={handlerClick}>Convert to Uppercase</button>
-  <button className="btn btn-primary mx-2" onClick={handleroneClick}>Convert to Lowercase</button>
-  <button className="btn btn-primary mx-2" onClick={clearHandle}>Clear All</button>
-  <button className="btn btn-primary mx-2" onClick={handleCopy}>Copy</button>
-  <button className="btn btn-primary mx-2" onClick={removeSpace}>Space Remover</button>
+  <button className="btn btn-primary mx-2 my-2" onClick={handlerClick}>Convert to Uppercase</button>
+  <button className="btn btn-primary mx-2 my-2" onClick={handleroneClick}>Convert to Lowercase</button>
+  <button className="btn btn-primary mx-2 my-2" onClick={clearHandle}>Clear All</button>
+  <button className="btn btn-primary mx-2 my-2" onClick={handleCopy}>Copy</button>
+  <button className="btn btn-primary mx-2 my-2" onClick={removeSpace}>Space Remover</button>
   </div>
 
     <div className="container my-3" style={{color: props.mode === "light" ? 'black' : "white"}}>
